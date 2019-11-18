@@ -3,22 +3,28 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro x,y,resultado,contador
-		escreva("escreva o valor de x: ")
+		inteiro x, cont, impares
+
+		cont=1
+		escreva("escreva um valor impar de zero a 10000 \n")
 		leia(x)
-		escreva("escreva o valor de y: ")
-		leia(y)
-		se (y >=0)
+		
+		impares=0
+		
+		se (x%2==0)
 		{
-			resultado=1
-			para(contador = 1;contador <=y; contador++)
-			{
-				resultado=resultado *x
-				escreva("x = ",x, " contador = ",contador," resultado = ",resultado)
-			}
+			escreva("o número digitado é par, por favor digite um valor ímpar\n")
 		}
-		senao{
-			escreva("valor invalido para expoente\n")
+		senao
+		{
+			para (cont=1;cont<=x;cont++)
+					{	
+					impares=impares+1
+					se (impares%2!=0)
+					{
+						escreva(impares,"\n")
+					}
+			}
 		}
 	}
 }
@@ -27,7 +33,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 268; 
+ * @POSICAO-CURSOR = 69; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

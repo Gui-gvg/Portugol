@@ -1,25 +1,25 @@
 programa
 {
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
-		inteiro x,y,resultado,contador
-		escreva("escreva o valor de x: ")
-		leia(x)
-		escreva("escreva o valor de y: ")
-		leia(y)
-		se (y >=0)
-		{
-			resultado=1
-			para(contador = 1;contador <=y; contador++)
-			{
-				resultado=resultado *x
-				escreva("x = ",x, " contador = ",contador," resultado = ",resultado)
-			}
-		}
-		senao{
-			escreva("valor invalido para expoente\n")
-		}
+		real x1,x2,y1,y2, distancia, raiz
+
+		
+
+		escreva("Digite os valores do ponto x: ")
+		leia(x1)
+		leia(y1)
+
+		escreva("Digite os valores do ponto y: ")
+		leia(x2)
+		leia(y2)
+
+		distancia=(x2-x1)*(x2-x1) + (y2-y1)*(y2-y1)
+		raiz=mat.raiz(distancia, 2)
+
+		escreva(raiz)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -27,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 268; 
+ * @POSICAO-CURSOR = 232; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

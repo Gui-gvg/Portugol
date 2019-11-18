@@ -3,31 +3,41 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro x,y,resultado,contador
-		escreva("escreva o valor de x: ")
+		inteiro x, cont, impares
+
+		cont=1
+		escreva("escreva um valor impar de zero a 10000 \n")
 		leia(x)
-		escreva("escreva o valor de y: ")
-		leia(y)
-		se (y >=0)
-		{
-			resultado=1
-			para(contador = 1;contador <=y; contador++)
+		
+		impares=0
+		se (x%2==0)
 			{
-				resultado=resultado *x
-				escreva("x = ",x, " contador = ",contador," resultado = ",resultado)
+			x=x+1
+			para (cont=1;cont<=6;cont++)
+					{	
+					escreva(x,"\n")
+					x=x+2
+					}
+			}
+		senao
+			{
+			para (cont=1;cont<=6;cont++)
+					{	
+					
+					escreva(x,"\n")
+					x=x+2
+					
+					}					
+				
 			}
 		}
-		senao{
-			escreva("valor invalido para expoente\n")
-		}
-	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 268; 
+ * @POSICAO-CURSOR = 215; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
